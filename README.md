@@ -115,3 +115,36 @@ Unless you turn on cloud recognition, your voice and text stay on your computer,
 AitJaz is made by Nurbek Rakhmetov in Atyrau, Kazakhstan (sole proprietor "Lotus Group"). Email: info@aitjaz.com · WhatsApp: [+7 705 791 0303](https://wa.me/77057910303) · [YouTube](https://www.youtube.com/@aitjaz_app)
 
 Documents: [terms](https://aitjaz.com/en/terms.html) · [refund](https://aitjaz.com/en/refund.html) · [privacy](https://aitjaz.com/en/privacy.html).
+
+## Guides / Инструкции
+
+**In this repo / В репозитории:** [Command line](docs/command-line.md) · [Computer sound](docs/computer-sound.md) · [Quick commands](docs/quick-commands.md)
+
+**English**
+- [Transcribe audio from the command line on Windows](https://aitjaz.com/en/blog/transcribe-audio-from-command-line/)
+- [How to type with your voice on a Windows PC](https://aitjaz.com/en/blog/how-to-type-with-your-voice-on-windows/)
+- [Offline dictation software for Windows](https://aitjaz.com/en/blog/offline-dictation-software-windows/)
+- [All articles](https://aitjaz.com/en/blog/)
+
+**Deutsch**
+- [Diktiersoftware für Windows: offline und privat](https://aitjaz.com/de/blog/diktiersoftware-windows-offline/)
+- [Mit der Stimme tippen am Windows-PC](https://aitjaz.com/de/blog/mit-der-stimme-tippen-windows/)
+- [Alle Artikel](https://aitjaz.com/de/blog/)
+
+**Español**
+- [Programa para dictar en Windows sin internet](https://aitjaz.com/es/blog/programa-para-dictar-windows-sin-internet/)
+- [Cómo escribir con la voz en el PC con Windows](https://aitjaz.com/es/blog/escribir-con-la-voz-en-pc/)
+- [Todos los artículos](https://aitjaz.com/es/blog/)
+
+**Русский**
+- [Как перевести видео с YouTube в текст на компьютере](https://aitjaz.com/blog/video-youtube-v-tekst/)
+- [Как печатать голосом в Telegram и WhatsApp на компьютере](https://aitjaz.com/blog/kak-pechatat-golosom-v-telegram-i-whatsapp/)
+- [Голосовой ввод для ChatGPT, Claude и DeepSeek](https://aitjaz.com/blog/golosovoj-vvod-dlya-chatgpt-claude/)
+- [Аудио в текст по говорящим: как расшифровать совещание](https://aitjaz.com/blog/audio-v-tekst-po-govoryashchim/)
+- [Все статьи](https://aitjaz.com/blog/)
+
+**Қазақша**
+- [Компьютерде қазақша дауыспен жазу](https://aitjaz.com/kz/blog/kompyuterde-dauyspen-zhazu/)
+- [Барлық мақалалар](https://aitjaz.com/kz/blog/)
+
+**[Скачать / Download AitJaz-Setup.exe](https://github.com/aitjaz/aitjaz/releases/latest/download/AitJaz-Setup.exe)** · 7 дней бесплатно / 7-day free trial
