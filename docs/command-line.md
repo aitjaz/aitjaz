@@ -41,6 +41,32 @@ Aitjaz.exe --transcribe "C:\Записи\встреча.m4a" --format docx --spe
 
 Готовый файл называется как запись: `встреча.docx`; если такой уже есть — `встреча (2).docx`.
 
+### Записать звук компьютера и расшифровать (с 0.3.13)
+
+Когда файла нет, а звук играет на компьютере (ролик YouTube, вебинар, совещание в Zoom, Teams, Meet), его можно
+записать и сразу расшифровать одной командой. Сам ролик не скачивается: пишется только то, что звучит из динамиков.
+
+```
+Aitjaz.exe --record-system --until-silence 10 --format txt --speakers
+```
+
+| Параметр | Что делает |
+|---|---|
+| `--record-system` | Записать звук компьютера, потом расшифровать запись |
+| `--seconds N` | Остановиться через N секунд |
+| `--until-silence S` | Остановиться после S секунд тишины (когда звук уже был). Без `--seconds` и `--until-silence` — 10 секунд |
+| `--with-mic` | Добавить свой микрофон: совещание (вы и собеседники в одной записи) |
+| `--keep-audio` | Сохранить и сам звук (.m4a) рядом с текстом |
+
+Остальные параметры (`--format`, `--out`, `--lang`, `--speakers`, `--local`, `--json`) — те же. По умолчанию
+результат сохраняется в папку «Загрузки», имя — «Запись ДД.ММ.ГГГГ ЧЧ-ММ». Ctrl+C останавливает запись,
+и записанное расшифровывается. Если за 60 секунд звук так и не появился — код 4. Если распознать не удалось,
+звук сохраняется рядом (поле `audio` в JSON). В JSON для записи есть ещё поля `source` (`system` или
+`system+mic`), `seconds_recorded` и `stopped_by` (`time`, `silence`, `ctrl+c`; `device` — пропало устройство
+звука; `end` — предел 4 часа; `nothing` — звука не было, код 4).
+
+Совещания записывайте, только предупредив участников. Чужие ролики — только для себя.
+
 ### Коды выхода
 
 | Код | Значение |
@@ -100,6 +126,9 @@ Get-Content "C:\Temp\итог.json" -Encoding UTF8 | ConvertFrom-Json
 AitJaz (скажи пользователю), 4 — в записи нет речи. Для разделения по говорящим добавь '--speakers'.
 Распознавание идёт на компьютере пользователя; время зависит от ПК, языка и модели (на слабом ПК — дольше).
 Для версии из Microsoft Store вместо полного пути пиши просто Aitjaz.exe.
+Нет файла, но звук играет на компьютере (ролик, вебинар) — вместо '--transcribe','"<файл>"' укажи
+'--record-system','--until-silence','10' (или '--seconds','<N>'): запусти команду без -Wait (с -PassThru),
+включи воспроизведение (на это есть 60 с) и дождись $p.WaitForExit(). Скорость ролика — 1x.
 ```
 
 ### Конфиденциальность
@@ -141,6 +170,33 @@ Aitjaz.exe --transcribe "C:\Recordings\meeting.m4a" --format docx --speakers --o
 | `--local` | This computer only, even if the cloud is enabled |
 | `--json <file>` | Write the result as JSON (state, result path, duration, exit code) |
 | `--help` | Help |
+
+### Record computer sound and transcribe it (0.3.13+)
+
+When there is no file but the sound plays on the computer (a YouTube video, a webinar, a Zoom/Teams/Meet meeting),
+record it and transcribe it with one command. The video is not downloaded: only what plays through the speakers is
+recorded.
+
+```
+Aitjaz.exe --record-system --until-silence 10 --format txt --speakers
+```
+
+| Option | What it does |
+|---|---|
+| `--record-system` | Record computer sound, then transcribe the recording |
+| `--seconds N` | Stop after N seconds |
+| `--until-silence S` | Stop after S seconds of silence once sound has started. Default without `--seconds`/`--until-silence`: 10 |
+| `--with-mic` | Also record your microphone: a meeting (you and the other participants in one recording) |
+| `--keep-audio` | Also save the sound (.m4a) next to the text |
+
+The other options (`--format`, `--out`, `--lang`, `--speakers`, `--local`, `--json`) are the same. By default the
+result goes to "Downloads", named "Recording DD.MM.YYYY HH-MM". Ctrl+C stops recording and transcribes what
+was recorded. No sound within 60 seconds: exit code 4. If recognition fails, the sound is kept (`audio` in the JSON).
+The JSON of a recording also has `source` (`system` or `system+mic`), `seconds_recorded` and `stopped_by`
+(`time`, `silence`, `ctrl+c`; `device` — the audio device disappeared; `end` — the 4-hour limit; `nothing` — no sound,
+exit code 4).
+
+Record meetings only after telling the participants. Other people's videos — for your own use only.
 
 Exit codes: 0 done · 1 recognition/saving error · 2 bad arguments or file not found · 3 activation needed ·
 4 no speech in the recording · 130 interrupted.
@@ -192,6 +248,9 @@ Then read <folder>\aitjaz.json: exit_code 0 means the text is in the file from t
 3 means AitJaz needs activation (tell the user); 4 means there is no speech. Add '--speakers' to split by speakers.
 Recognition runs on the user's computer; the time depends on the PC, language and model (longer on a slow PC).
 For the Microsoft Store version use just Aitjaz.exe instead of the full path.
+No file, but the sound plays on the computer (a video, a webinar)? Instead of '--transcribe','"<file>"' pass
+'--record-system','--until-silence','10' (or '--seconds','<N>'): start the command without -Wait (with -PassThru),
+start playback (you have 60 s) and then call $p.WaitForExit(). Play the video at 1x speed.
 ```
 
 ### Privacy
