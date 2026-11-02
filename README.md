@@ -4,7 +4,9 @@
 
 Название по-казахски значит «скажи, напиши» («Айт, жаз»).
 
-**[Скачать AitJaz-Setup.exe](https://github.com/aitjaz/aitjaz/releases/latest/download/AitJaz-Setup.exe)** (последняя версия, около 235 МБ) · [Microsoft Store](https://apps.microsoft.com/detail/9NB5F8LH5PJZ) · [Сайт aitjaz.com](https://aitjaz.com)
+**Лучше скачивать с сайта [aitjaz.com](https://aitjaz.com)**: оттуда AitJaz ставится через Microsoft Store: без окна «Windows защитила ваш компьютер», и антивирусы реже принимают программу за угрозу ([почему так лучше](#почему-лучше-скачивать-с-сайта)).
+
+Прямая ссылка: [AitJaz-Setup.exe](https://github.com/aitjaz/aitjaz/releases/latest/download/AitJaz-Setup.exe) (последняя версия, около 223 МБ) · [Microsoft Store](https://apps.microsoft.com/detail/9NB5F8LH5PJZ)
 
 В этом репозитории только выпуски программы (установщики), исходного кода здесь нет. [English version below](#english).
 
@@ -33,17 +35,32 @@
 
 ## Как установить
 
-Нужны Windows 10 или 11 (64-бит) и микрофон. Права администратора не нужны, программа ставится в папку пользователя.
+Нужны Windows 10 или 11 (64-бит) и микрофон.
+
+**Без предупреждений Windows — через сайт.** Откройте [aitjaz.com](https://aitjaz.com) и нажмите «Скачать бесплатно»: откроется страница AitJaz в Microsoft Store, установите программу оттуда.
+
+**Установщик с этой страницы** (права администратора не нужны, программа ставится в папку пользователя):
 
 1. Скачайте [AitJaz-Setup.exe](https://github.com/aitjaz/aitjaz/releases/latest/download/AitJaz-Setup.exe) и запустите его.
 2. Если Windows покажет синее окно «Windows защитила ваш компьютер», нажмите «Подробнее», затем «Выполнить в любом случае».
 3. Когда значок AitJaz появится возле часов, зажмите правый Ctrl и говорите.
 
-### Почему Windows показывает синее окно
+### Почему лучше скачивать с сайта
 
-У установщика пока нет цифровой подписи издателя (платного сертификата разработчика). Так Windows встречает новые программы без такого сертификата, поэтому в окне написано «Неизвестный издатель».
+- **Нет предупреждений.** Главная кнопка на сайте ставит AitJaz из Microsoft Store. Это та же программа, но её проверил Microsoft и подписал пакет. Поэтому нет окна «Windows защитила ваш компьютер» и надписи «Неизвестный издатель», а ложные тревоги антивирусов бывают реже.
+- **Обновления — через Microsoft Store**, как у других программ из Store.
+- **Всё на одной странице.** На сайте пошаговая инструкция на вашем языке, ответы на частые вопросы, цена и покупка ключа.
+- **Пробный период и ключ те же.** 7 дней бесплатно, купленный ключ подходит к версии из Store и к установщику.
 
-Если не хотите видеть это окно, установите AitJaz из [Microsoft Store](https://apps.microsoft.com/detail/9NB5F8LH5PJZ). Там программа проходит проверку Microsoft, пакет подписан Microsoft, а обновления ставит сам Store.
+Если Microsoft Store у вас не открывается или недоступен (например, в России), скачайте установщик: на сайте ссылка ведёт на этот же файл последней версии. Из России откройте [aitjaz.com/ru/](https://aitjaz.com/ru/).
+
+### Если браузер или антивирус блокирует установщик
+
+У установщика пока нет цифровой подписи издателя (платного сертификата разработчика), а программа новая. Поэтому Windows, браузеры и антивирусы проверяют его строже обычного. Что может случиться и что делать:
+
+- **Браузер пишет, что файл скачивают редко или он может быть опасен.** В Edge: в списке загрузок нажмите «…» рядом с AitJaz-Setup.exe → «Сохранить» → «Показать больше» → «Всё равно сохранить». В Chrome: откройте загрузки (Ctrl+J) и у AitJaz-Setup.exe выберите скачать файл, несмотря на предупреждение.
+- **Синее окно «Windows защитила ваш компьютер», издатель «неизвестен».** Нажмите «Подробнее», затем «Выполнить в любом случае».
+- **Защитник Windows или другой антивирус удалил файл или назвал его угрозой.** Если файл скачан с этой страницы или с aitjaz.com, скорее всего, это ложная тревога. Каждый выпуск перед публикацией мы проверяем Защитником Windows. Когда однажды, в версии 0.3.5, Защитник ошибся, Microsoft по нашей заявке проверил файл и ответил: угроз нет. Антивирус не отключайте. Установите AitJaz из [Microsoft Store](https://apps.microsoft.com/detail/9NB5F8LH5PJZ) и напишите нам на info@aitjaz.com, какой антивирус сработал и какое название угрозы он показал, чтобы мы сообщили о ложном срабатывании.
 
 ### Зачем файл AitJaz-Setup.exe.sig
 
@@ -78,7 +95,9 @@ AitJaz делает Нурбек Рахметов в Атырау, Казахс�
 
 AitJaz is voice typing for Windows 10 and 11. Hold the right Ctrl key, speak, and release it: your words appear as text with punctuation and capital letters wherever the cursor is, in any program. Speech is recognized on your computer, without internet. The name is Kazakh for "say, write".
 
-**[Download AitJaz-Setup.exe](https://github.com/aitjaz/aitjaz/releases/latest/download/AitJaz-Setup.exe)** (latest version, about 235 MB) · [Microsoft Store](https://apps.microsoft.com/detail/9NB5F8LH5PJZ) · [Website](https://aitjaz.com/en/)
+**Best way to get it: [aitjaz.com/en](https://aitjaz.com/en/)**. The website installs AitJaz from Microsoft Store: without the "Windows protected your PC" screen, and with fewer antivirus false alarms ([why](#why-download-from-the-website)).
+
+Direct link: [AitJaz-Setup.exe](https://github.com/aitjaz/aitjaz/releases/latest/download/AitJaz-Setup.exe) (latest version, about 223 MB) · [Microsoft Store](https://apps.microsoft.com/detail/9NB5F8LH5PJZ)
 
 This repository holds only the program's releases (installers). There is no source code here.
 
@@ -100,7 +119,26 @@ The first 7 days are free, with all features, no sign-up and no card. After that
 
 ### Installing
 
-You need Windows 10 or 11 (64-bit) and a microphone; admin rights are not required. If Windows shows a blue "Windows protected your PC" screen, click "More info", then "Run anyway". The screen appears because the installer does not have a code signing certificate yet. The [Microsoft Store](https://apps.microsoft.com/detail/9NB5F8LH5PJZ) version is signed by Microsoft and installs without it.
+You need Windows 10 or 11 (64-bit) and a microphone. The easiest way: open [aitjaz.com/en](https://aitjaz.com/en/), click the download button, and install AitJaz from Microsoft Store.
+
+With the installer from this page (admin rights are not required): run AitJaz-Setup.exe. If Windows shows a "Windows protected your PC" screen, click "More info", then "Run anyway".
+
+### Why download from the website
+
+- **No warnings.** The main button on the website installs AitJaz from Microsoft Store. It is the same app, checked by Microsoft and with a package signed by Microsoft, so there is no "Windows protected your PC" screen or "Unknown publisher", and antivirus false alarms are less likely.
+- **Updates come through Microsoft Store**, like any other Store app.
+- **Everything in one place.** Step-by-step instructions in your language, answers to common questions, prices and the license purchase.
+- **Same trial, same key.** 7 days free; a purchased key works in both the Store version and the installer.
+
+If Microsoft Store is missing or blocked on your PC, use the installer: the website links to this same file, always the latest version.
+
+### If your browser or antivirus blocks the installer
+
+The installer does not have a code signing certificate yet, and the app is new, so Windows, browsers and antivirus programs check it more strictly.
+
+- **The browser says the file is not commonly downloaded or may be dangerous.** In Edge: in the downloads list, click "…" next to AitJaz-Setup.exe → "Keep" → "Show more" → "Keep anyway". In Chrome: open Downloads (Ctrl+J) and choose to download the file despite the warning.
+- **A "Windows protected your PC" screen with an unknown publisher.** Click "More info", then "Run anyway".
+- **Windows Defender or another antivirus deleted the file or called it a threat.** If you downloaded it from this page or from aitjaz.com, it is most likely a false alarm. We scan every release with Windows Defender before publishing; when Defender once flagged version 0.3.5, Microsoft reviewed the file at our request and found no threat. Do not turn your antivirus off. Install AitJaz from [Microsoft Store](https://apps.microsoft.com/detail/9NB5F8LH5PJZ) and email info@aitjaz.com with the antivirus name and the threat name it showed, so we can report the false alarm.
 
 ### The .sig file
 
@@ -147,4 +185,4 @@ Documents: [terms](https://aitjaz.com/en/terms.html) · [refund](https://aitjaz.
 - [Компьютерде қазақша дауыспен жазу](https://aitjaz.com/kz/blog/kompyuterde-dauyspen-zhazu/)
 - [Барлық мақалалар](https://aitjaz.com/kz/blog/)
 
-**[Скачать / Download AitJaz-Setup.exe](https://github.com/aitjaz/aitjaz/releases/latest/download/AitJaz-Setup.exe)** · 7 дней бесплатно / 7-day free trial
+**Скачать / Download: [aitjaz.com](https://aitjaz.com) · [aitjaz.com/en](https://aitjaz.com/en/)** (Microsoft Store) · [AitJaz-Setup.exe](https://github.com/aitjaz/aitjaz/releases/latest/download/AitJaz-Setup.exe) · 7 дней бесплатно / 7-day free trial
