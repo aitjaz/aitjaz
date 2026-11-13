@@ -26,6 +26,10 @@
 
 ![Пример расшифровки в Word: реплики двух говорящих с отметками времени](https://aitjaz.com/img/app/word-govoryashchie.png)
 
+## Руководство
+
+Как пользоваться программой, по шагам: [aitjaz.com/rukovodstvo](https://aitjaz.com/rukovodstvo/). На одной странице: установка и пробный период, первая диктовка, язык речи и раскладка, аудио и видео в текст, быстрые команды, словарь, облако со своим ключом, активация, обновления, что делать, если что-то не работает, и частые вопросы.
+
 ## Цена и пробный период
 
 - Первые 7 дней бесплатно, со всеми функциями, без регистрации и карты.
@@ -175,6 +179,7 @@ Documents: [terms](https://aitjaz.com/en/terms.html) · [refund](https://aitjaz.
 - [Todos los artículos](https://aitjaz.com/es/blog/)
 
 **Русский**
+- [Руководство: как пользоваться AitJaz](https://aitjaz.com/rukovodstvo/)
 - [Как перевести видео с YouTube в текст на компьютере](https://aitjaz.com/blog/video-youtube-v-tekst/)
 - [Как печатать голосом в Telegram и WhatsApp на компьютере](https://aitjaz.com/blog/kak-pechatat-golosom-v-telegram-i-whatsapp/)
 - [Голосовой ввод для ChatGPT, Claude и DeepSeek](https://aitjaz.com/blog/golosovoj-vvod-dlya-chatgpt-claude/)
