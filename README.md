@@ -6,7 +6,7 @@
 
 **Лучше скачивать с сайта [aitjaz.com](https://aitjaz.com)**: оттуда AitJaz ставится через Microsoft Store: без окна «Windows защитила ваш компьютер», и антивирусы реже принимают программу за угрозу ([почему так лучше](#почему-лучше-скачивать-с-сайта)).
 
-Прямая ссылка: [AitJaz-Setup.exe](https://github.com/aitjaz/aitjaz/releases/latest/download/AitJaz-Setup.exe) (последняя версия, около 223 МБ) · [Microsoft Store](https://apps.microsoft.com/detail/9NB5F8LH5PJZ)
+Прямая ссылка: [AitJaz-Setup.exe](https://github.com/aitjaz/aitjaz/releases/latest/download/AitJaz-Setup.exe) (последняя версия, около 250 МБ) · [Microsoft Store](https://apps.microsoft.com/detail/9NB5F8LH5PJZ)
 
 В этом репозитории только выпуски программы (установщики), исходного кода здесь нет. [English version below](#english).
 
@@ -20,7 +20,7 @@
 - Быстрые команды: подпись, реквизиты, шаблон ответа вставляются по названию: дважды быстро нажмите клавишу диктовки — у курсора откроется список; назовите команду голосом или пролистайте список. [Подробнее](docs/quick-commands.md)
 - Расшифровка из командной строки для скриптов и ИИ-помощников: `Aitjaz.exe --transcribe "файл"`. [Инструкция](docs/command-line.md)
 - По желанию распознаёт через облачный сервис по вашему собственному ключу API. По умолчанию это выключено.
-- Окна и меню программы — на 15 языках: русский, английский, немецкий, испанский, французский, итальянский, португальский, польский, турецкий, украинский, китайский, японский, корейский, арабский, хинди. Язык выбирается по языку Windows, сменить его можно в окне настроек.
+- Окна и меню программы — на 23 языках: русский, английский, казахский, узбекский, кыргызский, белорусский, армянский, азербайджанский, таджикский, туркменский, немецкий, испанский, французский, итальянский, португальский, польский, турецкий, украинский, китайский, японский, корейский, арабский, хинди. Язык выбирается по языку Windows, сменить его можно в окне настроек.
 
 ![Окно AitJaz, раздел «Аудио и видео в текст»](https://aitjaz.com/img/app/audio-v-tekst.png)
 
@@ -74,7 +74,7 @@
 
 Пока вы не включили облачное распознавание, голос и распознанный текст остаются на вашем компьютере. Программа не собирает статистику, журнал работы пишется без текстов. В интернет программа выходит, чтобы:
 
-- скачать модель распознавания для выбранного языка (с Hugging Face) и, при первом включении «Разделить по говорящим», модель голосов (с GitHub);
+- скачать модель распознавания для выбранного языка (с нашей страницы на GitHub, а если там её нет — с Hugging Face); модель голосов для «Разделить по говорящим» уже входит в программу и скачивается так же, только если её там нет;
 - раз в сутки проверить, вышла ли новая версия (на GitHub; у версии из Microsoft Store это делает сам Store);
 - раз в 7 дней проверить ключ, если лицензия куплена картой;
 - отправить сообщение о проблеме, когда вы сами нажали «Сообщить о проблеме» и «Отправить»: текст обращения, e-mail (если указали), версии программы и Windows, языки, случайный номер установки и, если не снимете галочку (она стоит сразу), голос и текст последних фраз за 30 минут, не больше 10;
@@ -101,7 +101,7 @@ AitJaz is voice typing for Windows 10 and 11. Hold the right Ctrl key, speak, an
 
 **Best way to get it: [aitjaz.com/en](https://aitjaz.com/en/)**. The website installs AitJaz from Microsoft Store: without the "Windows protected your PC" screen, and with fewer antivirus false alarms ([why](#why-download-from-the-website)).
 
-Direct link: [AitJaz-Setup.exe](https://github.com/aitjaz/aitjaz/releases/latest/download/AitJaz-Setup.exe) (latest version, about 223 MB) · [Microsoft Store](https://apps.microsoft.com/detail/9NB5F8LH5PJZ)
+Direct link: [AitJaz-Setup.exe](https://github.com/aitjaz/aitjaz/releases/latest/download/AitJaz-Setup.exe) (latest version, about 250 MB) · [Microsoft Store](https://apps.microsoft.com/detail/9NB5F8LH5PJZ)
 
 This repository holds only the program's releases (installers). There is no source code here.
 
@@ -115,7 +115,7 @@ This repository holds only the program's releases (installers). There is no sour
 - Quick commands insert a signature, bank details or a reply template by name: press the dictation key twice quickly, and a list opens next to the cursor; say the name or step through the list. [Details](docs/quick-commands.md)
 - Command-line transcription for scripts and AI assistants: `Aitjaz.exe --transcribe "file"`. [Guide](docs/command-line.md)
 - Can use a cloud service with your own API key if you turn it on. It is off by default.
-- The program's windows and menus come in 15 languages (English, Russian, German, Spanish, French, Italian, Portuguese, Polish, Turkish, Ukrainian, Chinese, Japanese, Korean, Arabic, Hindi). The language follows Windows and can be changed in Settings.
+- The program's windows and menus come in 23 languages (English, Russian, Kazakh, Uzbek, Kyrgyz, Belarusian, Armenian, Azerbaijani, Tajik, Turkmen, German, Spanish, French, Italian, Portuguese, Polish, Turkish, Ukrainian, Chinese, Japanese, Korean, Arabic, Hindi). The language follows Windows and can be changed in Settings.
 
 ### Price
 
@@ -150,7 +150,7 @@ Each release has two files: `AitJaz-Setup.exe` and `AitJaz-Setup.exe.sig`. The s
 
 ### Privacy
 
-Unless you turn on cloud recognition, your voice and text stay on your computer, and the program collects no usage statistics. It goes online to download language models (from Hugging Face) and the speaker model (from GitHub), to check for updates once a day, to check a license key bought by card once every 7 days, and to send a problem report only when you click "Report a problem" and "Send" (your text, e-mail if given, app and Windows versions, a random install ID and, unless you untick the box, which is ticked by default, the audio and text of up to 10 recent phrases). It also checks the status of your problem reports and asks the website whether a voice test is open for your language (report number, language and app version only, no voice or text). Details: [privacy policy](https://aitjaz.com/en/privacy.html).
+Unless you turn on cloud recognition, your voice and text stay on your computer, and the program collects no usage statistics. It goes online to download language models (from our GitHub page, or from Hugging Face if a model isn't there; the speaker model already ships with the app), to check for updates once a day, to check a license key bought by card once every 7 days, and to send a problem report only when you click "Report a problem" and "Send" (your text, e-mail if given, app and Windows versions, a random install ID and, unless you untick the box, which is ticked by default, the audio and text of up to 10 recent phrases). It also checks the status of your problem reports and asks the website whether a voice test is open for your language (report number, language and app version only, no voice or text). Details: [privacy policy](https://aitjaz.com/en/privacy.html).
 
 ### Who makes it
 
